@@ -1,0 +1,17 @@
+#lia sedang mengajari adiknya yang kesulitan dalam mempelajari pemangkatan kemudian ia meminta saya untuk membuatkan program
+#supaya adiknya mudah memahami pemangkatan 
+
+#input: user diminta untuk menginputkan angka yang ingin dipangkatkan beserta pangkatnya
+#proses: membuat fungsi kemudian memakai if else untuk mendapatkan pangkatnya
+#output: hasil pangkatnya
+
+def pangkat(y,z):
+    if z ==0:
+        return 1
+    else:
+        return y *pangkat(y,z-1)
+
+y=int(input("masukkan angka y: "))
+z=int(input("masukkan angka z: "))
+
+print("%d dipangkatkan %d = %d" % (y,z,pangkat(y,z)))
